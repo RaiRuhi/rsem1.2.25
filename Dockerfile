@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 #########################################################
 # Installs bowtie from compiled distribution into /opt/bowtie
 ENV BOWTIE_URL=http://sourceforge.net/projects/bowtie-bio/files/bowtie
-ENV BOWTIE_RELEASE=0.12.9
+ENV BOWTIE_RELEASE=1.3.1
 ENV DEST_DIR=/opt
 
 # Download Bowtie, unzip it and remove .zip file
