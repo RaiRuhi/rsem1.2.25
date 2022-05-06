@@ -1,4 +1,4 @@
-FROM phusion/baseimage
+FROM phusion/baseimage:focal-1.2.0
 MAINTAINER Alejandro Barrera <alejandro.barrera@duke.edu>
 
 # Install dependencies
