@@ -28,8 +28,8 @@ ENV PATH=${DEST_DIR}/bowtie-${BOWTIE_RELEASE}:$PATH
 
 # Define ENV variables for download
 ENV RSEM_RELEASE=1.2.21
-#ENV RSEM_URL=https://github.com/deweylab/RSEM/archive/v${RSEM_RELEASE}.tar.gz
-ENV RSEM_URL=https://github.com/deweylab/RSEM/releases/tag/v${RSEM_RELEASE}.tar.gz
+ENV RSEM_URL=https://github.com/deweylab/RSEM/archive/refs/tag/v${RSEM_RELEASE}.tar.gz
+#ENV RSEM_URL=https://github.com/deweylab/RSEM/releases/tag/v${RSEM_RELEASE}.tar.gz
 ENV DEST_DIR=/opt
 
 # Download and unpack RSEM sources, make & install and remove unnecessary files
