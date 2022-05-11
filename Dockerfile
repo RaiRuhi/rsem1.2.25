@@ -36,6 +36,7 @@ ENV DEST_DIR=/opt
 RUN curl -SLo ${DEST_DIR}/RSEM-${RSEM_RELEASE}.tar.gz ${RSEM_URL} && \
     tar xzvf ${DEST_DIR}/RSEM-${RSEM_RELEASE}.tar.gz -C ${DEST_DIR} && \
     cd ${DEST_DIR}/RSEM-${RSEM_RELEASE} && \
++   sed -i.bak "s/CC = g++/CC = g++ -std=gnu++98/" Makefile && \
     make && \
     rm -rf ${DEST_DIR}/RSEM-${RSEM_RELEASE}.tar.gz
 
