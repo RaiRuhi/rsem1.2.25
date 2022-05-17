@@ -24,7 +24,7 @@ class: CommandLineTool
     ShellCommandRequirement: {}
  hints:
     DockerRequirement:
-      dockerPull: dukegcb/rsem:1.2.21
+       docker pull ghcr.io/rairuhi/rsem1.2.25:main
  inputs:
     bam_or_sam:
       type: string
