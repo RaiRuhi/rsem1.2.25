@@ -10,10 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with:
-          node-version: 12
-      - run: cwl ci
-      - run: cwl test
 
   publish-gpr:
     needs: build
@@ -24,10 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with:
-          node-version: 12
-          registry-url: https://ghcr.io/RaiRuhi/rsem1.2.25/
-      - run: cwl ci
-      - run: cwl publish
+        registry-url: https://ghcr.io/RaiRuhi/rsem1.2.25/
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
