@@ -1,0 +1,5 @@
+cwl-runner convert-sam-for-rsem.cwl
+
+ADD src ./
+WORKDIR ./
+RUN chmod +x /convert-sam-for-rsem.cwl
