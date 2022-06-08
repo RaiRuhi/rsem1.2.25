@@ -57,8 +57,10 @@ jobs:
         #if: github.event_name != 'pull_request'
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
-           username: ${{ secrets.DOCKERHUB_USERNAME }}
-           password: ${{ secrets.DOCKERHUB_TOKEN }}
+           #username: ${{ secrets.DOCKERHUB_USERNAME }}
+           username: ruhir
+           #password: ${{ secrets.DOCKERHUB_TOKEN }}
+           password: 16675422
           
       - name: Log in to the Container registry
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
